@@ -10,13 +10,11 @@ Example usage:
 
 ```
 $ ./get_coreos.sh list-arch
-stable.json                                             54 kB 2262 kBps    00s
 aarch64
 ppc64le
 s390x
 x86_64
 $ ./get_coreos.sh list-formats s390x
-stable.json                                             54 kB   13 MBps    00s
   ibmcloud	qcow2.xz
      metal	4k.raw.xz
      metal	iso
@@ -25,7 +23,6 @@ stable.json                                             54 kB   13 MBps    00s
  openstack	qcow2.xz
       qemu	qcow2.xz
 $ ./get_coreos.sh get s390x metal pxe
-stable.json                                             54 kB   32 MBps    00s
 >> initramfs
 fedora-coreos-41.20250215.3.0-live-initramfs.s          56 MB   27 MBps    02s
 Checksums match
