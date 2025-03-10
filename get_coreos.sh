@@ -79,7 +79,7 @@ listformats() {
 # The stream json contains both the expected sha256 sum
 # and the URL to a checksum file; this uses the former.
 get_files() {
-  JQPATH=".architectures.$1.artifacts.$2.formats.$3"
+  JQPATH=".architectures.[\"$1\"].artifacts.[\"$2\"].formats.[\"$3\"]"
   ITEMS=$(cat "$FILE" | jq "$JQPATH | keys[]" | tr -d '"' | tr '\n' ' ')
 
   for item in $ITEMS; do
