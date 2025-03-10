@@ -57,8 +57,6 @@ download_quiet() {
   $FETCH $QOPTS "$1" >/dev/null
 }
 
-### Utility functions
-
 # List available architectures
 listarch() {
   cat "$FILE" | jq '.architectures | keys[]' | tr -d '"'
